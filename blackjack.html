@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack Game</title>
+    <style>
+        body{
+            color: white;
+            font-weight: 700;
+        }
+        .container{
+            width: 400px;
+            margin: auto;
+            border: 4px solid gray;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            background: green;
+        }
+        h1{
+            color: yellow;
+        }
+        .btn{
+            width: 45%;
+            margin: .2rem auto;
+            color:green;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 1rem;
+            background: yellow;
+            cursor: pointer;
+            transition: .3s ease;
+            border: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Blackjack</h1>
+        <p id="message-el">Want to play around: </p>
+        <p id="card-el">card: </p>
+        <p id="sum-el">Sum: </p>
+        <button class="btn" onclick="startGame()">Start game</button>
+        <button class="btn" onclick="newCard()">new card</button>
+        <p id="player-el"></p>
+    </div>
+    
+    <script src="blackjack.js"></script>
+</body>
+</html>
